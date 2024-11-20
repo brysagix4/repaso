@@ -1,25 +1,63 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
 
-  <script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-    let numero = 2;
+<script>
 
-    if (numero>1  || numero==3) {
-      document.write("Si cumple con todooooooooooooooo");
-    } 
-  
-    else {
-      document.write("No cumple");
-    }
 
-  </script>
+  let retornarValores = (a, b) => [a, b];
 
-  <body></body>
+  let resultado = retornarValores(10, 20);
+  console.log(resultado); // [10, 20]
+
+  console.log(resultado[0]); // 10
+  console.log(resultado[1]); // 20
+
+
+
+  let operaciones = (a, b) => {
+    return {
+      suma: a + b,
+      resta: a - b
+    };
+  };
+
+
+
+  let resultado2 = operaciones(10, 5);
+  console.log(resultado2.suma);  // 15
+  console.log(resultado2.resta); // 5
+
+
+
+  let multiplicarPorDos = (numero) => {
+    let resultado = numero * 2;
+    return resultado;
+  };
+
+  let valor = multiplicarPorDos(10);  // Guardamos el resultado en `valor`
+
+  console.log(valor);  // 20
+
+  const sumar = (a, b) => a + b;  // Definimos la función flecha
+
+  // Guardamos el resultado de la función en una variable
+  const resultado3 = sumar(5, 3);
+
+  console.log(resultado3);  // 8
+
+
+  const saludar = () => console.log("¡Hola, mundo!");
+  saludar(); // ¡Hola, mundo!
+
+</script>
+
+<body></body>
+
 </html>
